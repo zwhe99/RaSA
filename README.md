@@ -10,6 +10,15 @@ pip3 install -e ./bigcode-evaluation-harness --config-settings editable_mode=com
 
 
 
+##### Download training data
+
+```shell
+python3 scripts/tools/dl_dataset.py ise-uiuc/Magicoder-Evol-Instruct-110K data/ise-uiuc/Magicoder-Evol-Instruct-110K
+python3 scripts/tools/dl_dataset.py meta-math/MetaMathQA data/meta-math/MetaMathQA
+```
+
+
+
 **Training scripts**
 
 See `scripts/train`
