@@ -21,7 +21,7 @@ python3 scripts/tools/dl_dataset.py meta-math/MetaMathQA data/meta-math/MetaMath
 
 **Training scripts**
 
-See `scripts/train`
+ `scripts/train` provides training scripts for all the main experiments.
 
 
 
