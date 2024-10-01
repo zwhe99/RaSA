@@ -152,9 +152,7 @@ def train(
         Returns:
             dict: The tokenized chat data.
         """
-        if data_name == "HuggingFaceH4/ultrachat_200k":
-            messages = sample["messages"]
-        elif data_name == "ise-uiuc/Magicoder-Evol-Instruct-110K":
+        if data_name == "ise-uiuc/Magicoder-Evol-Instruct-110K":
             messages = [
                 {"role": "user", "content": sample["instruction"]},
                 {"role": "assistant", "content": sample["response"]}
@@ -163,14 +161,6 @@ def train(
             messages = [
                 {"role": "user", "content": sample["query"]},
                 {"role": "assistant", "content": sample["response"]}
-            ]
-        elif data_name in ["zwhe99/agent-general", "zwhe99/agent-sci-general"]:
-            messages = sample["conversations"]
-        elif data_name == "zwhe99/commonsense_170k":
-            assert not sample["input"]
-            messages = [
-                {"role": "user", "content": sample["instruction"]},
-                {"role": "assistant", "content": sample["output"]}
             ]
         else:
             raise ValueError(f"Data name {data_name} not recognized.")
