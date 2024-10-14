@@ -1,3 +1,0 @@
-include: unitxt_tasks.grammatical_error_correction
-task: coedit_gec
-dataset_name: card=cards.coedit_gec,template=templates.grammatical_error_correction.simple
