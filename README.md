@@ -1,6 +1,8 @@
 ## RaSA: Rank-Sharing Low-Rank Adaptation
 
-
+<div align="center">
+  <img src="assert/rasa.png" alt="Logo" width="300">
+</div>
 
 #### Conda environment
 
